@@ -13,12 +13,18 @@ public class RubyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // use variables for built in movement engine
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
+        // create a vector position
         Vector2 position = transform.position;
-        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-        position.y = position.y + 3.0f * vertical * Time.deltaTime;
+
+        // set speed and direction
+        position.x = position.x + 5.0f * horizontal * Time.deltaTime;
+        position.y = position.y + 5.0f * vertical * Time.deltaTime;
+
+        // move Ruby
         transform.position = position;
     }
 }
