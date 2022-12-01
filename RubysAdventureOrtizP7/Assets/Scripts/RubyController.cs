@@ -6,10 +6,10 @@ public class RubyController : MonoBehaviour
 {
     public float speed = 5.0f;
 
-    public int health { get { return currentHealth;  }}
+    public int health { get { return currentHealth; } }
     public int maxHealth = 5;
     public int currentHealth;
-    public float timeInvincible = 2.0f;
+    public float timeInvincible = 1.0f;
     bool isInvincible;
     float invinicleTimer;
 
